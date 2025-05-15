@@ -1,0 +1,91 @@
+<html>
+	<head>
+	<style>
+	.p{color:red;}
+	.s{color:blue;}
+		body{
+		background-image: url('aerosup.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-size: 100% 100%;}
+	</style>
+	<script type="text/javascript">
+		function amazon (){
+		var txt;
+		var email=prompt("please enter your email");
+		var password=prompt("please enter the password");
+		if(email==null||email==""&&password==null||password=="")
+		{
+			alert(" Is required for signing !!");
+		}
+		else
+		{
+			alert("Thank you");
+		}
+		document.getElementById("demo").innerHTML=txt;}
+		</script>
+	</head>
+	<body>
+		<center><h1><ins>Flight Ticket Booking</ins></h1></center> 
+		<center><table border="1" cellpadding="50" cellspacing="50">
+			<tr>
+				<td><b><p>December</p><p>RS 6,308S</p></b></td>
+				<td><b><p>January</p><p>Rs 5,983<p></b></td>
+				<td><b><p>February</p><p>Rs 5,017</p></b></td>
+				<td><b><p>March</p><p>Rs 4,097</p></b></td>
+				<td><b><p>April</p><p>Rs 5,907</p></b></td>
+				<td><b><p>May</p><p>Rs 4,098</p></b></td>
+			</tr><tr>
+				<center><caption>Bangalore to Delhi Flight Info</caption></center>
+				<td  colspan="3"><center>Cheapest Airlines:AirAsia</center></td>
+				<td colspan="3"><center>Today Best Fare:Rs 9,152</center></td>
+			</tr></center>
+			</table>
+		<center><table rules="rows" cellpadding="50" cellspacing="50">	
+			<tr>
+				<td class="p">Airline</td>
+				<td class="p">Depart</td>
+				<td class="p">Duration</td>
+				<td class="p">Arrive</td>
+				<td class="p">Price</td>
+			</tr>
+			<tr>
+				<td class="s">GO First</td>
+				<td><p>21:30</p><p>Bangalore</p></td>
+				<td><p>02h 45m</p><p>Non-stop</p></td>
+				<td><p>00:15</p><p>Delhi</p></td>
+				<td>RS 9,153</td>
+			</tr>
+			<tr>
+				<td class="s">Spicejet</td>
+				<td><p>21:50</p><p>Bangalore</p></td>
+				<td><p>02h 45m</p><p>Non-stop</p></td>
+				<td><p>00:35</p><p>Delhi</p></td>
+				<td>RS 9876</td>
+			</tr>
+			<tr>
+				<td class="s">Go First</td>
+				<td><p>04:45</p><p>Bangalore</p></td>
+				<td><p>02h 50m</p><p>Non-stop</p></td>
+				<td><p>07:35</p><p>Delhi</p></td>
+				<td>RS 9,123</td>
+			</tr>
+			<tr>
+				<td class="s">Indigo</td>
+				<td><p>00:45</p><p>Bangalore</p></td>
+				<td><p>02 45m</p><p>Non-stop</p></td>
+				<td><p>02:30</p><p>Delhi</p></td>
+				<td>RS 9,143</td>
+			</tr>
+			<tr>
+				<td class="s">Spicejet</td>
+				<td><p>06:00</p><p>Bangalore</p></td>
+				<td><p>02h 45m</p><p>Non-stop</p></td>
+				<td><p>08:45</p><p>Delhi</p></td>
+				<td>RS 9845</td>
+			</tr>
+		</center>
+		</table>
+		<h1 style="background-color:#ffefd2;">  
+		<input type="button" id="demo" value="Book Now" onclick="amazon()"></h1>

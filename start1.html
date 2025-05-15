@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script type="text/javascript">  
+			function validateform(){  
+			var name=document.myform.name.value;  
+			var password=document.myform.password.value;  
+  			     if (name==null || name==""){  
+			          alert("Name can't be blank");  
+			          return false;  
+			      }else if(password.length<6){  
+			          alert("Password must be at least 6 characters long.");  
+			           return false;  
+				}
+			alert("Thank you for signing in")}  
+		</script>  
+
+	</head>
+	<body> 
+	<h1>Sign Up</h1>
+	<table cellpadding="20"> 
+		<form name="myform" onsubmit="return validateform()">
+		<tr>  
+			<td>Enter First Name:</td><td><input type="text" name="name"></td></tr>
+			<tr><td>Enter Last Name:</td><td><input type="text"></td></tr>
+			<tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+			<tr><td>Enter G-Mail:</td><td><input type="text" name="EMail"></td></tr>
+			<tr><td>Enter Mobile number:</td><td><input type="text" id="num"></td></tr>
+			<tr><td colspan="2"><center><input type="submit" value="register" onclick="validateform()"></center></td></tr>
+		</form>
+	</body>
+</html>  
